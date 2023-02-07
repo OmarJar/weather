@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    background-image: url("https://source.unsplash.com/1600x900/?Landscape");
+    font-family: 'Merriweather', serif;
+}
+
+.weather_div {
+
+    margin: 200px auto 300px auto;
+    width: fit-content;
+
+    background: rgb(88, 91, 91);
+    opacity: 0.9;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.h2_status,
+.h2_humidity,
+.h2_wind {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.h2_status {
+    text-transform: capitalize;
+}
+
+.h2_city,
+.h2_degree {
+    margin-top: 10px;
+}
+
+.cityInput {
+    height: 30px;
+    width: 290px;
+}
+
+.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+input {
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 24px;
+   
+    margin-right: 10px;
+}
+.search-btn{
+font-size: 25px;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.btn_txt{
+    align-items: center;
+    justify-content:center;
+    display:flex;
+}
